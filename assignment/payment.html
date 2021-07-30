@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>    
+<head>
+    <title>NL Badminton Center</title>
+    <link href="payment.css" rel="stylesheet" />
+    <script type="text/javascript" src="cart.js" async></script>
+    <script type="text/javascript" src="change.js" async></script>
+    
+</head>
+
+<body class="scroll" onload="load()">
+    <header >
+        <table>
+            <thead>
+                <tr>
+                    <th class="Column1" ><img  width=140px  src = "logo.jpg" ></th>
+                    <th class="Column2" ><a href="NL_index.html">Home</a></th>
+                    <th class="Column3" ><a href="#">Court</a></th>
+                    <th class="Column4" ><a href="News.html">News</a></th>
+                    <th class="Column5" ><a href="online_store.html">Store</a></th>
+                    <th class="Column6" ><a href="trainingprogram.html">Training Program</a></th>
+                    <th class="Column7" ><a href="cart.html"><img  src = "trolley.png" height=30px width=30px></a></th>
+                    <th class="Column8" ><a href="#">Login</a></th>
+                </tr>
+            </thead>
+        </table>
+    </header>
+    <hr>
+    <section>
+        <form action="payment.html" method="post" id="form2">
+            <p><h4 class = "nametitle">Pay</h4></p>
+            <br>
+            <div  class="creditcard">
+                <input name="CreditCard" id="Credit Card" type="radio" checked/>
+                <label for="Credit Card">Credit Card &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+                <label for="Credit Card"><img src="credit card 2.jpg" width="140px" height="auto" alt="credit card"></label>
+            </div>
+            <br>
+            <p><h4 class = "nametitle">Enter Credit Card Info</h4></p>
+            <br>
+            <div  id="floatContainer" class="float-container" class="label">
+                 <label for="Card Number">Card Number</label>
+                 <br>
+                 <input type="text" id="Card Number" required>
+            </div>
+            <br>
+            <div  id="floatContainer" class="float-container" class="label">
+                <label for="Name on Card">Name on Card</label>
+                <br>
+                <input type="text" id="Name on Card" required>
+            </div>
+            <br>
+            <div  id="floatContainer" class="float-container" class="label">
+            <label for="Security Code">Security Code</label>
+            <br>
+            <input type="text" id="Security Code" required>
+            </div>
+            <br>
+            <p><h4 class = "nametitle">Expiration Date</h4></p>
+            <br>
+            <div id="floatContainer" class="float-container">
+                <label for="month">Month</label>
+                <br>
+                <select class="box" name="month" id="month" style="width: 200px;" required>
+                    <option selected="selected" disabled selected value>&nbsp;&nbsp;&nbsp;&nbsp;-- select an option -- </option>
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                </select>    
+           </div>
+            <br>
+            <div id="floatContainer" class="float-container" >
+                <label for="year">Year</label>
+                <br>
+                <input list="years" name="year" id="year" required>
+                <datalist class="box" id="years">
+                    <option value="2010">
+                    <option value="2011">
+                    <option value="2012">
+                    <option value="2013">
+                    <option value="2014">
+                    <option value="2015">
+                    <option value="2016">
+                    <option value="2017">
+                    <option value="2018">
+                    <option value="2019">
+                    <option value="2020">
+                    <option value="2021">
+                    <option value="2022">
+                    <option value="2023">
+                    <option value="2024">
+                    <option value="2025">
+                    <option value="2026">
+                    <option value="2027">
+                    <option value="2028">
+                    <option value="2029">
+                    <option value="2030"> 
+                    <option value="2031"> 
+                    <option value="2032"> 
+                    <option value="2033"> 
+                    <option value="2034"> 
+                    <option value="2035"> 
+                    <option value="2036"> 
+                    <option value="2037"> 
+                    <option value="2038"> 
+                    <option value="2039"> 
+                    <option value="2040">  
+                </datalist>    
+           </div>
+           <br>
+        </form>
+    </section>
+    <aside >
+        <p><h2>Order Summary</h2></p>
+        <div class="cart-total">
+            <strong>Subtotal</strong>
+            <span class="cart-total-price" style="float:right;">RM159.89</span>
+        </div>
+        <div class="cart-total">
+            <strong>Shipping Fee</strong>
+            <span style="float:right;">RM0</span>
+        </div>    
+        <div class="cart-total">
+            <strong>Total</strong>
+            <span class="cart-total-price" style="float:right;">RM159.89</span>
+        </div>
+    </aside>
+    <input type="submit" form="form2" value="Pay Now" class="button" onclick="confirmFunction()"> 
+    <footer>
+        <a href ="contactus.html" style="text-decoration: none" >
+            <p>Contact Us:012-3456789 &nbsp;  E-mail:NL Badminton@gmail.com</p>
+        </a>
+    </footer>
+</body>
+
+
+
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NL Badminton Center</title>
+    <link href="user input.css" rel="stylesheet" />
+    <script type="text/javascript" src="cart.js" async></script>
+    <script type="text/javascript" src="change.js" async></script>
+</head>
+
+<body class="scroll" onload="load()">
+    <header >
+        <table>
+            <thead>
+                <tr>
+                    <th class="Column1" ><img  width=140px  src = "logo.jpg" ></th>
+                    <th class="Column2" ><a href="NL_index.html">Home</a></th>
+                    <th class="Column3" ><a href="#">Court</a></th>
+                    <th class="Column4" ><a href="News.html">News</a></th>
+                    <th class="Column5" ><a href="online_store.html">Store</a></th>
+                    <th class="Column6" ><a href="trainingprogram.html">Training Program</a></th>
+                    <th class="Column7" ><a href="cart.html"><img  src = "trolley.png" height=30px width=30px></a></th>
+                    <th class="Column8" ><a href="#">Login</a></th>
+                </tr>
+            </thead>
+        </table>
+    </header>
+    <hr>
+    <section>
+        <p><h3 class = "name">Delivery information</h3></p>
+        <form action="payment.html" method="post" class=info id="form1">
+            <div class= "place1">
+                 <label>Full Name</label>
+                 <br>
+                 <input type="text" name="firstName" placeholder="Enter first and last name" required>
+            </div>
+            <br>
+            <div class= "place1">
+                 <label>Phone Number</label>
+                 <br>
+                 <input type="tel" name="lastName" placeholder="ex:012-3456789" required>
+            </div>
+            <br>
+            <div class= "place1">
+                <label>Email</label>
+                <br>
+                <input type="email" name="Email" placeholder="example@gmail.com" required>
+            </div>
+            <br>
+            <div class= "place1">
+                <label>Address</label>
+                <br>
+                <textarea type="text" name="lastName" row="10" column="20" placeholder="ex: No.66 Jalan Kenari, Taman Kenari" required></textarea>
+            </div>
+            <br>
+            <div class= "place1">
+                <label>Postcode</label>
+                <br>
+                <input type="text" name="postcode" placeholder="ex:32100" required>
+            </div>
+            <br>
+            <div class= "place1">
+                <label>City</label>
+                <br>
+                <input type="text" name="City" placeholder="ex:Kuala Lumpur" required>         
+               </div>
+            <br>
+            <div class= "place1">
+                <label>state</label>
+                <br>
+                <select name="state">
+                    <option value="Johor">Johor</option>
+                    <option value="Kelantan">Kelantan</option>
+                    <option value="Malacca">Malacca</option>
+                    <option value="Kedah">Kedah</option>
+                    <option value="Negeri Sembila">Negeri Sembilan</option>
+                    <option value="Pahang">Pahang</option> 
+                    <option value="Penang">Penang</option>
+                    <option value="Perak">Perak</option> 
+                    <option value="Perlis">Perlis</option>
+                    <option value="Sabah">Sabah</option>
+                    <option value="Sarawak">Sarawak</option>
+                    <option value="Selangor">Selangor</option>
+                    <option value="Terengganu">Terengganu</option>
+                    <option value="other">Other</option> 
+                </select>    
+           </div>
+            <br>
+    </section>
+    <aside >
+        <p><h2>Order Summary</h2></p>
+        <div class="cart-total">
+            <strong>Subtotal</strong>
+            <span class="cart-total-price" style="float:right;">RM159.89</span>
+        </div>
+        <div class="cart-total">
+            <strong>Shipping Fee</strong>
+            <span style="float:right;">RM0</span>
+        </div>    
+        <div class="cart-total">
+            <strong>Total</strong>
+            <span class="cart-total-price" style="float:right;">RM159.89</span>
+        </div>
+    </aside>
+
+    <input type="submit" form="form1" value="Continue To Payment" class="button">
+</body>
+
+<footer>
+    <a href ="contactus.html" style="text-decoration: none" >
+        <p>Contact Us:012-3456789 &nbsp;  E-mail:NL Badminton@gmail.com</p>
+    </a>
+
+</footer>
+
+
+</html>

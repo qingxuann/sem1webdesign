@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NL Badminton Center</title>
+    <link href="user input.css" rel="stylesheet"/>
+    <link href="products.css" rel="stylesheet"/>
+    <script type="text/javascript" src="cart.js" async></script>
+    <style>
+     .desc {
+  padding: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
+     }
+    </style>
+</head>
+
+<body>
+    <header >
+        <table>
+            <thead>
+              <tr>
+                <th class="Column1" ><img  width=140px  src = "logo.jpg" ></th>
+                <th class="Column2" ><a href="NL_index.html">Home</a></th>
+                <th class="Column3" ><a href="#">Court</a></th>
+                <th class="Column4" ><a href="News.html">News</a></th>
+                <th class="Column5" ><a href="online_store.html">Store</a></th>
+                <th class="Column6" ><a href="trainingprogram.html">Training Program</a></th>
+                <th class="Column7" ><a href="cart.html"><img  src = "trolley.png" height=30px width=30px></a></th>
+                <th class="Column8" ><a href="#">Login</a></th>
+            </tr>
+            </thead>
+        </table>
+    </header>
+
+    <hr>
+    <div class=desc>
+    <img id="myImg1" src="pictures/online_store_pic/Shirt_pic/victor shirt2.png" class="myImg" alt="shirt " width="380" height="380" >
+<img id="myImg2" src="pictures/online_store_pic/Shirt_pic/victor shirt3.png" class="myImg" alt="shirt" width="380" height="380">
+<img id="myImg2" src="pictures/online_store_pic/Shirt_pic/victor shirt4.png" class="myImg" alt="shirt" width="380" height="380">
+
+
+
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div> 
+  
+  <script>
+      // Get the modal
+     var modal = document.getElementById("myModal");
+
+     // Get the image and insert it inside the modal - use its "alt" text as a caption
+     var images = document.querySelectorAll(".myImg");
+     var modalImg = document.getElementById("img01");
+     var captionText = document.getElementById("caption");
+     for(let i = 0; i < images.length; i++){
+     images[i].onclick = function(){
+     modal.style.display = "block";
+     modalImg.src = this.src;
+     captionText.innerHTML = this.alt;
+  }
+}
+// Get the <span> element that closes the modal
+     var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+     span.onclick = function() {
+     modal.style.display = "none";
+} 
+ </script>
+                               
+     <div class="desc"><strong><span style= "font-size: 22px">Victor Sportswear Jersey Badminton T-Shirt</span></strong></div>
+    <div><span style="color:rgb(245, 65, 15);font-size:30px">RM32.90</span></div>
+
+  
+   <table style="width:30%;float:left">
+        <thead>
+    <tr>
+        <th><span style="color:rgb(53, 50, 50)">Shipping</span></th>
+        <th><img src="freeShipping.png" alt="badminton raquets" width="30" height="20">Free Shipping</th>
+    </tr>
+    
+    <tr>
+        <th><span style="color:rgb(53, 50, 50)" >Color</span></th>
+        <th>
+            <div id="myDIV">
+                <button class="btn">Red</button>
+                <button class="btn active">White</button>
+                <button class="btn">Blue</button>
+              </div>
+              
+              <script>
+              var header = document.getElementById("myDIV");
+              var btns = header.getElementsByClassName("btn");
+              for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                if (current.length > 0) { 
+                  current[0].className = current[0].className.replace(" active", "");
+                }
+                this.className += " active";
+                });
+              }
+              </script>
+              
+        </th>
+    </tr>
+
+    <tr>
+        <th><span style="color:rgb(53, 50, 50)" >Size</span></th>
+        <th>
+            <div id="myDIV">
+                <button class="btn active">M</button>
+                <button class="btn ">L</button>
+                <button class="btn">XL</button>
+                <button class="btn">XL</button>
+                <button class="btn">2XL</button>
+              </div>
+              
+              <script>
+              var header = document.getElementById("myDIV");
+              var btns = header.getElementsByClassName("btn");
+              for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                if (current.length > 0) { 
+                  current[0].className = current[0].className.replace(" active", "");
+                }
+                this.className += " active";
+                });
+              }
+              </script>
+              
+        </th>
+    </tr>
+
+    <tr>
+        <th><span style="color:rgb(53, 50, 50)">Quantity</span></th>
+        <th>
+            <div id="input_div">
+                <input type="button" value="-" id="moins" onclick="minus()">
+                <input type="text" size="5" value="1" id="count">
+            
+                <input type="button" value="+" id="plus" onclick="plus()">
+            </div>
+            <script>
+                 var count = 1;
+                 var countEl = document.getElementById("count");
+                 function plus(){
+                 count++;
+                 countEl.value = count;
+                 }
+                function minus(){
+                if (count > 1) {
+                 count--;
+                 countEl.value = count;
+                 }  
+                }
+            </script></th></tr>
+ </thead> 
+     </table> 
+    
+
+     <div class="card">
+  <p><button onclick="Stock()"><img height=20px width=20px src = "trolley.png" > Add to Cart</button> </p>
+    </div>
+   
+</div>
+
+     <div class="container">
+      <p id="p1"><strong><u>Product Description</u></strong></p>
+      <p>Product name:Victor Sportswear Jersey Badminton T-Shirt</p>
+    <p>Material: Polyster    </p>
+    <p>Applicable people: general(women / men)</p>
+    
+    <img id="myImg1" src="pictures/online_store_pic/Shirt_pic/victor shirt5.png" class="myImg" alt="shirt " >
+   
+    <p>100% Original 
+     <br>Suitable for all sports
+     <br>Very comfort and not hot for wearing</p>
+    
+   <p> #badminton #Victor #sport #BadmintonShirt #Women #Men  #Tee</p></div></div>
+    </div>   
+</body>
+
+
+<footer>
+  <a href ="contactus.html" style="text-decoration: none" >
+    <p>Contact Us:012-3456789 &nbsp;  E-mail:NL Badminton@gmail.com</p>
+  </a>
+
+</footer>
+
+
+</html>

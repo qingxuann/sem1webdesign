@@ -1,0 +1,237 @@
+@charset "utf-8";
+
+/*active button*/
+.btn {
+  border: 1px solid grey;
+  background-color: white;
+  color: black;
+  padding: 3px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  
+}
+
+  .active, .btn:hover {
+  background-color: #666;
+  color: white;
+}
+
+#p1{
+  background-color:#f0ebeb;
+  font-style: italic;
+  font-size: 22px; 
+}
+
+/*plus minus button*/
+  .quantity {
+    display: inline-block; }
+   
+   .quantity .input-text.qty {
+    width: 35px;
+    height: 39px;
+    padding: 0 5px;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid #efefef;
+   }
+   
+   .quantity.buttons_added {
+    text-align: left;
+    position: relative;
+    white-space: nowrap;
+    vertical-align: top; }
+   
+   .quantity.buttons_added input {
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+    box-shadow: none;
+   }
+   
+   .quantity.buttons_added .minus,
+   .quantity.buttons_added .plus {
+    padding: 7px 10px 8px;
+    height: 41px;
+    background-color: #ffffff;
+    border: 1px solid #efefef;
+    cursor:pointer;}
+   
+   .quantity.buttons_added .minus {
+    border-right: 0; }
+   
+   .quantity.buttons_added .plus {
+    border-left: 0; }
+   
+   .quantity.buttons_added .minus:hover,
+   .quantity.buttons_added .plus:hover {
+    background: #eeeeee; }
+   
+   .quantity input::-webkit-outer-spin-button,
+   .quantity input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0; }
+    
+    .quantity.buttons_added .minus:focus,
+   .quantity.buttons_added .plus:focus {
+    outline: none; }
+   
+    /*add to cart & Buy Now button*/
+    .card {
+      max-width: 300px;
+      margin: auto;
+      text-align: center;
+      font-family: arial;
+    }
+    
+    .card button {
+      border: none;
+      outline: 0;
+      padding: 12px;
+      color: white;
+      background-color: black;
+      text-align: center;
+      cursor: pointer;
+      width: 50%;
+      font-size: 16px;
+    }
+    
+    .container {
+      border: 2px solid rgb(184, 167, 13);
+      background-color:rgb(189, 176, 92 ) ;
+      border-radius: 5px;
+      padding: 16px;
+      margin: 16px 0
+    }
+    
+    .container::after {
+      content: "";
+      clear: both;
+      display: table;
+    
+    }
+    
+    .container span {
+      font-size: 20px;
+      margin-right: 15px;
+    }
+    
+    @media (max-width: 500px) {
+      .container {
+          text-align: center;
+      }
+    }
+    
+  /* Style the Image Used to Trigger the Modal */
+  .myImg{
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+   border: 2px solid rgb(184, 167, 13);
+      background-color:rgb(189, 176, 92 ) ;
+}
+
+.myImg:hover {
+  opacity: 0.7;
+  border: 2px solid rgb(184, 167, 13);
+  background-color:rgb(189, 176, 92 ) ;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+} 
+
+      
+body{
+  position: relative;
+}
+
+body::after{
+  content: "";
+  background: url(background.png);
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;
+  background-size: cover;
+}
+
+
+
+
+
+
+
+footer{
+	clear:both;
+}

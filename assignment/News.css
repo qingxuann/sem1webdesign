@@ -1,0 +1,218 @@
+@charset "utf-8";
+
+@font-face{
+      font-family:'Lobster', cursive;
+      src:url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+}
+section table tr td{
+    font-size:17px;
+    line-height: 1.0;
+    font-weight: bold ;
+}
+.link{
+    font-size:30px;
+    font-family:cursive;
+}
+.link a:visited, .link a:link {
+    color: rgb(128, 86, 10);
+    text-decoration: none;
+    
+ }
+
+.link a:hover,.link a:active {
+    color: rgb(222,128,60);
+    text-decoration: underline;
+ }
+
+.photo{
+    margin:10px;
+    float:left;
+    width:200px;
+   
+}
+.space{
+    width:50px;
+}
+.table1{
+    float:left;
+    clear:both;
+    width:70%; 
+    height:200px;
+    border-width:5px;  
+    border-style:outset;  
+    margin-bottom:20px;
+    background:rgba(206, 212, 219, 0.6);
+ 
+}
+
+.table2{
+     float:left;
+     clear:both;
+     width:70%; 
+     height:200px;
+     border-width:5px;  
+     border-style:outset;  
+     margin-bottom:20px;
+     background:rgba(206, 212, 219, 0.6);
+
+ }
+
+.table3{
+     float:left;
+     clear:both;
+     height:200px;
+     width:70%; 
+     border-width:5px;  
+     border-style:outset;  
+     margin-bottom:20px;
+     background:rgba(206, 212, 219, 0.6);
+
+ }
+
+
+
+section> hr{
+    width:60%;
+    float:left;
+
+}
+section{
+    padding-left:40px;
+    width:90%;
+}
+
+body section table tr{
+    border-collapse:collapse;
+    border-style:solid;
+    border-width:10px;
+    border-spacing:0;
+    line-height:0;
+    height:50px;
+
+}
+
+section table th a{
+float :left;
+padding-left: 40px;
+
+
+}
+.nametitle {
+    font-weight:bold;
+    font-size:30px;
+    padding-top:0px;
+    padding-bottom:0px;
+    margin-top:0px;
+    margin-bottom:0px;
+   
+}
+
+/*header*/
+header table{
+    display:inline-block;
+    list-style-type:none;
+    font-family:serif, monospace;
+    font-style: italic;
+    font-size:25px;
+    font-weight: bold;
+    width:100%;
+    
+}
+
+body hr{
+   margin-top:-10px;
+  
+}
+.Column1 {
+   padding-right:20px;
+   padding-left:20px;
+   width:10%;
+   text-align: center;
+   vertical-align: middle;
+   
+ }
+
+.Column2,.Column3,.Column4,.Column5{
+    padding-left: 40px;
+    padding-right: 40px;
+    width:10%;
+    text-align: center;
+    vertical-align: middle;
+ }
+
+ .Column6{
+    padding-left: 40px;
+    padding-right: 40px;
+    width:25%;
+    text-align: center;
+    vertical-align: middle;
+ }
+
+ .Column7 {
+     vertical-align: top;
+     padding-left: 10px;
+     padding-right: 15px;
+     padding-top:10px;
+     width:10%;
+     text-align:center;
+ }
+     
+ .Column8 {
+    vertical-align:top;
+    text-align:center;
+    padding:10px;
+    margin:10px;
+    padding-right:30px;
+    width:10%;
+ }
+
+ 
+
+ table > thead> tr> th > a:visited, table >thead> tr> th> a:link {
+    color: rgb(128, 86, 10);
+    text-decoration: none;
+    
+ }
+
+ table >thead> tr> th > a:hover, table >thead> tr> th> a:active {
+    color: rgb(222,128,60);
+    text-decoration: underline;
+ }
+
+/*body*/
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+
+body{
+    margin:0;
+    min-height:1000px;
+}
+
+body::after{
+    content: "";
+    background: url(racquet.jpg);
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;
+    background-size: cover;
+}
+/*footer*/
+footer > a > p {
+    text-align :center;
+    background-color: rgb(191, 120, 6) ;
+    color:rgb(247, 245, 245);
+    line-height:1.7;
+    font-size:20px;
+    position:fixed;
+    bottom:0;
+    clear:both;
+    margin:0;
+    width:100%;
+    padding:0;
+  }
